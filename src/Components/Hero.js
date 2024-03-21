@@ -32,7 +32,7 @@ export default function Hero() {
                         <Box sx={{ opacity: '0.3', cursor: 'pointer', '&:hover': { opacity: 0.8, transition: 'opacity 0.3s' }, display: 'flex', alignItems: 'center' }}>120</Box>
                     </Stack>
                 </Box>
-                <Box sx={{ width: '100%' }}>
+                <Box sx={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center' }}>
                     {/* <TextareaAutosize minRows={3} placeholder="Minimum 3 rows" /> */}
                     <TypingArea />
                 </Box>
