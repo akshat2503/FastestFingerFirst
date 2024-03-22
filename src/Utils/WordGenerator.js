@@ -8,11 +8,13 @@ const randomIntFromRange = (min, max) => {
 };
 
 const WordGenerator = () => {
-    const EnglishWordList = [];
+    // const EnglishWordList = [];
+    let EnglishWordList = "";
     for (let i = 0; i < 45; i++) {
         const rand = randomIntFromRange(0, 550);
         let wordCandidate = allWords[rand].val;
-        EnglishWordList.push(wordCandidate);
+        // EnglishWordList.push(wordCandidate);
+        EnglishWordList = EnglishWordList.concat(wordCandidate, " ");
     }
     return EnglishWordList;
 }
